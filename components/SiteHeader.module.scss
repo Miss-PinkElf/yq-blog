@@ -1,0 +1,106 @@
+.headerWrap {
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  border-bottom: 1px solid var(--line-soft);
+  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, #f9f6ef 84%, white 16%);
+
+  :global {
+    .headerInner {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #18787a 0%, #4ba7a8 100%);
+      box-shadow: 0 0 0 5px rgba(24, 120, 122, 0.14);
+    }
+
+    .name {
+      font-family: var(--font-serif), "Songti SC", serif;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+      font-weight: 600;
+    }
+
+    .nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px;
+      border-radius: 999px;
+      border: 1px solid var(--line-soft);
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .navItem {
+      padding: 8px 14px;
+      border-radius: 999px;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .navItem:hover {
+      color: var(--text-primary);
+      background: rgba(24, 120, 122, 0.11);
+    }
+
+    .aboutButton {
+      border-radius: 999px;
+      border-color: rgba(24, 120, 122, 0.3);
+      color: #166b6d;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .aboutButton:hover {
+      color: #125557;
+      border-color: rgba(24, 120, 122, 0.5);
+      background: rgba(24, 120, 122, 0.06);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .headerWrap {
+    :global {
+      .headerInner {
+        width: min(1120px, calc(100% - 20px));
+      }
+
+      .aboutButton {
+        display: none;
+      }
+
+      .nav {
+        margin-left: auto;
+      }
+
+      .navItem {
+        padding: 8px 10px;
+      }
+
+      .name {
+        font-size: 1rem;
+      }
+    }
+  }
+}

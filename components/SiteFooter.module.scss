@@ -1,0 +1,36 @@
+.footerWrap {
+  border-top: 1px solid var(--line-soft);
+  padding: 28px 0 38px;
+
+  :global {
+    .footerInner {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .line {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .heart {
+      margin: 0 4px;
+      color: #ce5b48;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .footerWrap {
+    :global {
+      .footerInner {
+        width: min(1120px, calc(100% - 20px));
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.cardWrap {
+  height: 100%;
+
+  :global {
+    .postCard {
+      height: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--line-soft);
+      box-shadow: 0 14px 36px rgba(24, 120, 122, 0.08);
+      background: rgba(255, 255, 255, 0.84);
+    }
+
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 0 !important;
+    }
+
+    .cover {
+      min-height: 124px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 16px;
+    }
+
+    .coverLabel {
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      color: #0f4142;
+      border-radius: 999px;
+      padding: 6px 10px;
+      border: 1px solid rgba(15, 65, 66, 0.2);
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(4px);
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 18px;
+    }
+
+    .meta {
+      font-size: 0.82rem;
+    }
+
+    .title {
+      margin: 0 !important;
+      line-height: 1.42 !important;
+      font-size: 1.1rem !important;
+      font-family: var(--font-serif), "Songti SC", serif;
+    }
+
+    .excerpt {
+      margin: 2px 0 0 !important;
+      color: var(--text-muted);
+      line-height: 1.7;
+      flex: 1;
+    }
+
+    .tags {
+      margin-top: 2px;
+    }
+
+    .readMore {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      width: fit-content;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #166b6d;
+      transition: transform 0.2s ease;
+    }
+
+    .readMore:hover {
+      transform: translateX(2px);
+    }
+  }
+}

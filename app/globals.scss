@@ -1,0 +1,73 @@
+:root {
+  --text-primary: #1f2a35;
+  --text-muted: #627184;
+  --line-soft: rgba(31, 42, 53, 0.12);
+  --page-surface: rgba(255, 255, 255, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  color: var(--text-primary);
+  font-family:
+    var(--font-sans), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255, 220, 186, 0.38), transparent 34%),
+    radial-gradient(circle at 85% 12%, rgba(167, 227, 228, 0.45), transparent 30%),
+    linear-gradient(180deg, #f9f6ef 0%, #eef3f8 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.siteBackdrop {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    repeating-linear-gradient(
+      125deg,
+      rgba(255, 255, 255, 0.28) 0,
+      rgba(255, 255, 255, 0.28) 16px,
+      transparent 16px,
+      transparent 44px
+    );
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, transparent 88%);
+}
+
+.siteApp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.siteMain {
+  width: min(1120px, calc(100% - 32px));
+  margin: 30px auto 62px;
+  flex: 1;
+}
+
+.sectionTitle {
+  margin: 0 !important;
+  font-family: var(--font-serif), "Songti SC", serif !important;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 900px) {
+  .siteMain {
+    width: min(1120px, calc(100% - 20px));
+    margin: 20px auto 42px;
+  }
+}

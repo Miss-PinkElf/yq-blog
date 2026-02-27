@@ -1,0 +1,74 @@
+.aboutPage {
+  display: grid;
+  gap: 18px;
+
+  :global {
+    .profileCard,
+    .skillCard,
+    .journeyCard {
+      border: 1px solid var(--line-soft);
+      border-radius: 22px;
+      background: var(--page-surface);
+      box-shadow: 0 12px 30px rgba(24, 120, 122, 0.06);
+    }
+
+    .profileTop {
+      width: 100%;
+      align-items: center;
+    }
+
+    .avatar {
+      background: linear-gradient(135deg, #18787a, #5ab0b2);
+    }
+
+    .name {
+      margin: 0 !important;
+    }
+
+    .subline {
+      margin: 6px 0 0 !important;
+      color: var(--text-muted);
+    }
+
+    .bio {
+      margin: 14px 0 16px !important;
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 66ch;
+    }
+
+    .cardTitle {
+      margin: 0 0 12px !important;
+    }
+
+    .skillTag {
+      margin-inline-end: 0;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border-color: rgba(20, 110, 112, 0.24);
+      color: #145f61;
+      background: rgba(20, 110, 112, 0.09);
+    }
+
+    .timelineItem {
+      padding-bottom: 8px;
+    }
+
+    .year {
+      color: #0f5f60;
+      font-weight: 600;
+    }
+
+    .timelineTitle {
+      margin: 2px 0 2px !important;
+      font-family: var(--font-serif), "Songti SC", serif;
+      font-size: 1.08rem !important;
+    }
+
+    .timelineDesc {
+      margin: 0 !important;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+  }
+}
