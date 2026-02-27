@@ -1,0 +1,121 @@
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.avatar {
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  margin-bottom: 8px;
+  color: #262626;
+}
+
+.title {
+  font-size: 16px;
+  color: #8c8c8c;
+  margin-bottom: 16px;
+}
+
+.bio {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #595959;
+}
+
+.socialLinks {
+  font-size: 20px;
+}
+
+.icon {
+  color: #8c8c8c;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #1890ff;
+}
+
+/* Section */
+.section {
+  padding: 24px 0;
+}
+
+/* Skills Grid */
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.skillTag {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.skillLevel {
+  margin-left: 4px;
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+/* Timeline */
+.timeline {
+  margin-top: 24px;
+}
+
+.year {
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.timelineContent {
+  padding-bottom: 16px;
+}
+
+.timelineContent h5 {
+  margin-bottom: 4px;
+  color: #262626;
+}
+
+.company {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-bottom: 0;
+  color: #595959;
+}
+
+/* Tech Card */
+.techCard {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.stackList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.stackItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

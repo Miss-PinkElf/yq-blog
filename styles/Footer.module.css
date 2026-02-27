@@ -1,0 +1,17 @@
+.wrapper {
+  background-color: #001529;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 24px 0;
+  margin-top: auto;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 4px 0;
+}

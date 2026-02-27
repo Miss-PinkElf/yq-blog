@@ -1,0 +1,141 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  height: 64px;
+  line-height: 64px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logoIcon {
+  font-size: 24px;
+  color: #1890ff;
+  line-height: 1;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  border: none;
+  background: transparent;
+  min-width: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu :global(.ant-menu-item) {
+  margin: 0 8px;
+}
+
+.menu :global(.ant-menu-item a) {
+  color: #595959;
+  transition: color 0.3s;
+}
+
+.menu :global(.ant-menu-item a:hover) {
+  color: #1890ff;
+}
+
+.menu :global(.ant-menu-item-selected a) {
+  color: #1890ff;
+}
+
+.mobileMenuBtn {
+  display: none;
+  font-size: 18px;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 16px 24px;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mobileMenuItem {
+  padding: 12px 0;
+  display: block;
+  color: #595959;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.mobileMenuItem:last-child {
+  border-bottom: none;
+}
+
+.mobileMenuItem:hover {
+  color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobileMenuBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileMenu {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .mobileMenuOpen {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
