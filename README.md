@@ -1,14 +1,19 @@
+# 博客项目
+
 ##### 使用的是 cc+glm4.7
 ##### 用的是下面的提示词
+
 ```
 1. 需要使用 agent-team这个功能先进行角色的规划，，最多不超过五个角色
 2. 我使用的是 iterm2，使用tmux这个命令在一个终端进行多开,切分，把每一个teamate都展示出来,
+```
 
 ### 目的
 写一个我可以直接运行的博客，有首页，文章列表页，关于我
 需要有良好的设计，简约的样式，可以使用，只需要有前端即可，数据使用静态的数据
 当你写完之后我可以直接运行
 其实不用管 是否使用use clien，不用太在意客户端组建和服务端组建，重要的是可用性，良好的样式
+
 ### 技术栈
 使用antd组件库
 使用next+react+ts、
@@ -16,7 +21,7 @@
 css module，只有一个要求，
 只有最外层需要，内层不需要，采用外层包裹、内层 className 的写法，对于css in js 比如
 
-```
+```tsx
 export const DetailDiv=styled.div'
   .user-info{
   }
@@ -25,6 +30,7 @@ export const DetailDiv=styled.div'
   <div className='user-info'><div/>
   <DetailDiv/>
 ```
+
 ### 结语
 总结我需要你最后给我一个可用展示的静态博客，文章，
 对于数据，可以使用 mockData.ts 直接把需要的数据定义好直接导出
@@ -33,4 +39,3 @@ export const DetailDiv=styled.div'
 直接在当前目录开始规划并编码，这是一个空文件夹从零开始
 不要让我确认任何东西，你自己决定所有的东西
 最后 需要npm run build 确认没有错误
-```
